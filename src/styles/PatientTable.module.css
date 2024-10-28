@@ -1,0 +1,95 @@
+/* src/styles/PatientTable.module.css */
+
+.container {
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 90%;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .addButton {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addButton:hover {
+    background-color: #218838;
+  }
+  
+  .tableWrapper {
+    /* max-height: 400px; Limit the height of the table */
+    overflow-y: auto; /* Add vertical scroll only to the table body */
+    margin-top: 10px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+  }
+  
+  .startButton, .endButton {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .startButton {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .startButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .endButton {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .endButton:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .tableWrapper {
+      max-height: 300px; /* Adjust height for smaller screens */
+    }
+  
+    th, td {
+      font-size: 0.9rem; /* Adjust font size for better readability */
+    }
+  
+    .addButton {
+      width: 100%; /* Full width button on mobile */
+    }
+  }
+  
